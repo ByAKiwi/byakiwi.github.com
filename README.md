@@ -1,4 +1,4 @@
-coded-by-a-kiwi
+http://by-a.kiwi.nz
 ===============
 
-The Coded By A Kiwi website
+The Coded By A Kiwi website, because New Zealanders create great things.
