@@ -56,9 +56,9 @@ $.domReady(function() {
   });
   
   var shiftColour = function() {
-    var $filter = $('#colour_change')[0].children[0];
+    var $filter = $('#colour_change')[0].childNodes[1];
     var c = $.times(20, function () {
-      return '0.' + $.random(9);
+      return $.random(10) / 10 + "";
     }).join(' ');
     $filter.setAttribute('values', c);
   };

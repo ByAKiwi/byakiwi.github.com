@@ -272,8 +272,8 @@ img.loaded {
 }
 
 .badges img.svg {
+  -webkit-filter: url(#colour_change);
   filter: url(#colour_change);
-  transition: 1s;
 }
 
 /* Footer */
