@@ -1,0 +1,17 @@
+{
+  "name": "by-a.kiwi",
+  "version": "0.1.0",
+  "author": "Multiple",
+  "homepage": "http://by-a.kiwi.nz",
+  "contributors": [
+    {"name": "Félix Saparelli", "email": "me@passcod.name"},
+    {"name": "Michael Robinson", "email": "mike@panmedia.co.nz"}
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/byakiwi/byakiwi.github.com"
+  },
+  "devDependencies": {
+    "ender": "1.0.x"
+  }
+}

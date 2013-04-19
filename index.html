@@ -1,65 +1,77 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Coded by ByAKiwi</title>
-
+    <title>Coded by a Kiwi: Celebrating kiwi coders and apps made in New Zealand</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1 class="header">Coded</h1>
-        <p class="header">by a kiwi</p>
+    <header>
+      <h1>Coded <span>by a kiwi</span></h1>
+      <img src="//served.by-a.kiwi.nz/coded/badge-white-128.png">
+    </header>
+    <section>
+      <h1>Built in New Zealand</h1>
+      <p>Because there's no place quite like it. Kiwis build world-class
+      applications and participate in the bleeding edge development of the
+      global web. Let's celebrate our work!</p>
 
+      <h1>The Badge</h1>
+      <p>If you're a developer, designer, or some kind of kiwi involved in any
+      way, show it off! Stick this badge onto your website or into your web
+      app.</p>
+      <p class="badges">
+        <img src="//served.by-a.kiwi.nz/coded/badge-dark-128.png">
+        <img src="//served.by-a.kiwi.nz/coded/badge-green-128.png">
+        <img src="//served.by-a.kiwi.nz/coded/badge-red-128.png">
+        <img src="//served.by-a.kiwi.nz/coded/badge-silver-128.png">
+        <img src="//served.by-a.kiwi.nz/coded/badge-white-128.png">
+        <img src="//served.by-a.kiwi.nz/coded/badge.svg"
+          width="128" height="128" class="svg">
+      </p>
+      
 
+      <h1>Not a coder?</h1>
+      <p>The <a href="http://by-a.kiwi.nz">By A Kiwi</a> initiative isn't
+      restricted to coders and web apps only. If you feel like your field of
+      work deserves recognition and celebration,
+      <a href="https://github.com/ByAKiwi/byakiwi.github.com/issues/new?title=New%20Category:%20%3Csomething%20cool%3E&amp;body=I%20think%20%3Csomething%20cool%3E%20should%20be%20added%20on,%20and%20here%27s%20why:">tell us about it</a>.
+      New Zealand is great at many things, let's show 'em off!</p>
 
-        <ul>
-          <li><a class="buttons github" href="https://github.com/ByAKiwi">GitHub Profile</a></li>
-        </ul>
-
-      </header>
-      <section>
-        <h3>Built in New Zealand</h3>
-
-<p>Because there's no place quite like it. Kiwis build world-class applications and participate in the bleeding edge development of the global web. Let's celebrate our work!</p>
-
-<h3>The Badge</h3>
-
-<p>If you're a developer, designer, or some kind of kiwi involved in any way, show it off! Stick this badge onto your website or into your web app.</p>
-
-<p><code>&lt;insert badges&gt;</code></p>
-
-<h3>Not a coder?</h3>
-
-<p>The <a href="http://by-a.kiwi.nz">By A Kiwi</a> initiative isn't restricted to coders and web apps only. If you feel like your field of work deserves recognition and celebration, <a href="https://github.com/ByAKiwi/byakiwi.github.com/issues/new?title=New%20Category:%20%3Csomething%20cool%3E&amp;body=I%20think%20%3Csomething%20cool%3E%20should%20be%20added%20on,%20and%20here%27s%20why:">tell us about it</a>. New Zealand is great at many things, let's show 'em off!</p>
-
-<h3>Who's showing it off?</h3>
-
-<p><code>&lt;insert favicons&gt;</code></p>
-      </section>
-      <footer>
-        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
-      </footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-		          <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-39886357-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
+      <h1>Who's showing it off?</h1>
+      <div id="favicons"></div>
+    </section>
+    <footer>
+      <p>Hosted on <a href="https://pages.github.com">GitHub Pages</a>, using
+      <a href="http://leaverou.github.io/prefixfree/"
+      title="prefix-free">a</a> <a href="http://modernizr.com"
+      title="Modernizr">few</a> <a href="http://yepnopejs.com"
+      title="Yepnope.js">awesome</a> <a href="//ender.jit.su"
+      title="Ender.js">Javascript</a> <a href="https://github.com/ded/reqwest"
+      title="reqwest.js">libraries</a>.</p>
+    </footer>
+    <script>
+    Modernizr.load([
+      "javascripts/scale.fix.js",
+      "javascripts/ender.js",
+      "javascripts/app.js",
+      "//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js",
+    {
+		  load: "//google-analytics.com/ga.js",
+		  callback: function () {
+		    try {
+		      _gat._getTracker("UA-39886357-1")._trackPageView();
+		    } catch(err) {}
+		  }
+		}]);
+    </script>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <filter id="colour_change">
+        <feColorMatrix in="SourceGraphic" type="matrix" values=" 1.0 0.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 0.0 0.0 1.0 0.0 1.0 0.0 0.0 0.0 1.0 0.0"/>
+      </filter>
+    </svg>
   </body>
 </html>
