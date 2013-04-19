@@ -1,6 +1,14 @@
 $.domReady(function() {
   'use strict';
   
+  var ignoredHosts = [
+    /^0(\.0){3}$/,
+    /by-a\.kiwi\.nz$/,
+    /^127(\.\d+)+$/,
+    /^localhost$/,
+    /\.(local|lan|wan)$/
+  ];
+  
   var newFav = $.template('<a target="_blank" href="<%= referer %>" ' + 
     'title="<%= title %>" alt=""><img src="<%= image_url %>"></a>');
   
@@ -35,19 +43,20 @@ $.domReady(function() {
     crossOrigin: true,
     success: function(resp) {
       var html = $.reduce(resp.projects, function(memo, p) {
-        if (/by-a\.kiwi\.nz/.test(p.referer)) {
-          // Ignore ourselves
+        var host = p.referer.replace(/^.+\/\//, '');
+
+        if ($.some(ignoredHosts, function(rgx) {return rgx.test(host);})) {
           return memo;
         }
-        
+
         if (p.image_url === null) {
           p.image_url = randomKiwi(32);
         }
-        
+
         if (p.title === null) {
-          p.title = p.referer.replace(/^.+\/\//, '');
+          p.title = host;
         }
-        
+
         return memo + newFav(p);
       }, '');
       $('#favicons')[0].innerHTML = html;
