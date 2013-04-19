@@ -276,6 +276,15 @@ img.loaded {
   filter: url(#colour_change);
 }
 
+.badges img.white {
+  background: url(/images/checker.png);
+  transition: background-position 1s linear;
+}
+
+.badges img.white[data-shifted] {
+  background-position: 8px 8px;
+}
+
 /* Footer */
 
 footer {
